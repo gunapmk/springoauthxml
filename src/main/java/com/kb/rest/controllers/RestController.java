@@ -14,6 +14,7 @@ public class RestController {
 
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 	public @ResponseBody User getUserForId(@PathVariable ("id") int id) {
+		System.out.println("inside");
 		User user = new User();
 		user.setId(id);
 		user.setName("John");
